@@ -1,0 +1,48 @@
+{
+  "_from": "react-native-userexperior",
+  "_inBundle": false,
+  "_integrity": "sha512-2eOw0wt5tYRZ9zkjA3E850EuEvkLbGNcZGDL4aapyI2sp5yZxe3v0P5ZprbYAHlUXpcawDsieY4eVQV73bZDCg==",
+  "_location": "/react-native-userexperior",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-userexperior",
+    "name": "react-native-userexperior",
+    "escapedName": "react-native-userexperior",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-userexperior/-/react-native-userexperior-1.2.4.tgz",
+  "_shasum": "c8abdccc985b181de00abdac3cee9196df4e3169",
+  "_spec": "react-native-userexperior",
+  "_where": "/Users/tirupatibalan/Desktop/HelloWorld",
+  "author": "UserExperior Technologies Pvt. Ltd.",
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "UserExperior react native module",
+  "keywords": [
+    "react-native"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "test-react-native-library-tiru",
+  "peerDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "rnpm": {
+    "android": {
+      "packageInstance": "new RNUserExperiorPackage()"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "spec": "latest",
+  "version": "1.2.4"
+}
