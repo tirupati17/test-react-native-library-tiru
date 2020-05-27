@@ -3,19 +3,24 @@
 
 ## Getting started
 
-`$ npm install react-native-userexperior --save`
+`$ npm install test-react-native-library-tiru --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-userexperior`
+### For react-native version less than 0.60
+`react-native link test-react-native-library-tiru`
+
+### For react-native version >=0.60, if using iOS you then need to:
+Edit the Podfile minimum platform version to platform :ios, '10.0'
+`cd ios && pod update && cd ..`
 
 ### Manual installation
 
 #### iOS
 
-1. `npm install react-native-userexperior --save`
+1. `npm install test-react-native-library-tiru --save`
 2. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
-3. Go to `node_modules` ➜ `react-native-userexperior` and add `RNUserExperior.xcodeproj`
+3. Go to `node_modules` ➜ `test-react-native-library-tiru` and add `RNUserExperior.xcodeproj`
 4. In XCode, in the project navigator, select your project. Add `libRNUserExperior.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 5. Click `RNUserExperior.xcodeproj` in the project navigator and go the `Build Settings` tab. Make sure 'All' is toggled on (instead of 'Basic'). Look for `Header Search Paths` and make sure it contains both `$(SRCROOT)/../react-native/React` and `$(SRCROOT)/../../React` - mark both as `recursive`.
 6. Run your project (`Cmd+R`)
@@ -27,18 +32,19 @@
   - Add `new RNUserExperiorPackage()` to the list returned by the `getPackages()` method
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-userexperior'
-  	project(':react-native-userexperior').projectDir = new File(rootProject.projectDir, 	'../node_modules/react-native-userexperior/android')
+  	include ':test-react-native-library-tiru'
+  	project(':test-react-native-library-tiru').projectDir = new File(rootProject.projectDir, 	'../node_modules/test-react-native-library-tiru/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-userexperior')
+      compile project(':test-react-native-library-tiru')
   	```
 
 
 ## Usage
 ```javascript
-import RNUserExperior from 'react-native-userexperior';
+var UserExperior = require('test-react-native-library-tiru');
+UserExperior.startRecording("key_here");
 
 // TODO: What to do with the module?
 RNUserExperior;
